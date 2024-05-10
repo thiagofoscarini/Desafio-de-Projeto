@@ -1,31 +1,44 @@
-let Personagem1 = ["Crono",10000]
-let Personagem2 = ["Marle",500]
-let Personagem3 = ["Lucca",750]
+let Personagem1 = ["Crono",1001]
+let Personagem2 = ["Marle",10000]
+let Personagem3 = ["Lucca",8001]
 RadicalDreamers = Personagem1.concat(Personagem2,Personagem3)
 console.log("A tua equipe atual é "+ RadicalDreamers[0]+" "+ RadicalDreamers[2] +" "+ RadicalDreamers[4])
-for(cont = 1;cont< RadicalDreamers.length ; cont++){
+for(cont =1;cont< RadicalDreamers.length ; cont++){
     
-    //console.log(RadicalDreamers[cont])
-if(RadicalDreamers[cont] <= 1000){
-    (RadicalDreamers[cont-1] + " o seu nível é  Ferro") 
+   console.log("XP ATUAL: "+ RadicalDreamers[cont])
+if(RadicalDreamers[cont]<=1000){
+   console.log("O herói de nome "+ RadicalDreamers[cont-1] + " está no nível  Ferro")
 
-}if(RadicalDreamers[cont]>1000 && RadicalDreamers[cont]<=2000 ){
-    (RadicalDreamers[cont-1] + " o seu nível é  Bronze") 
-   }if(RadicalDreamers[cont]>2000 && RadicalDreamers[cont]<=5000){
-    (RadicalDreamers[cont-1] + " o seu nível é  Prata") 
+} else if(RadicalDreamers[cont]>1000 && RadicalDreamers[cont]<=2000 ){
+    console.log("O herói de nome "+ RadicalDreamers[cont-1] + "está no nível Bronze") 
+   }
+   
+else if(RadicalDreamers[cont]>2000 && RadicalDreamers[cont]<=5000){
+    console.log("O herói de nome "+ RadicalDreamers[cont-1] + " está no nível Prata") 
 
-       }if(RadicalDreamers[cont]>5000 && RadicalDreamers[cont]<=7000){
-        (RadicalDreamers[cont-1] + " o seu nível é  Ouro")  
+       }
+       
+else if(RadicalDreamers[cont]>5000 && RadicalDreamers[cont]<=7000){
+        console.log("O herói de nome " + RadicalDreamers[cont-1] + " está no nível Ouro")  
      
-           }if(RadicalDreamers[cont]>5000 && RadicalDreamers[cont]<=7000){
-            (RadicalDreamers[cont-1] + " o seu nível é  Platina")   
-             }if(RadicalDreamers[cont]>8000 && RadicalDreamers[cont]<=9000){
-                (RadicalDreamers[cont-1] + " o seu nível é Ascendente") 
-             }if(RadicalDreamers[cont]>9000 && RadicalDreamers[cont]<=10000){
-                console.log(RadicalDreamers[cont-1] + " o seu nível é Imortal")
-             }if(RadicalDreamers[cont]>10000){
-             console.log(RadicalDreamers[cont-1] + " o seu nível é  Radiante")          
-             }  
+           }
+           
+else if(RadicalDreamers[cont]>7000 && RadicalDreamers[cont]<=8000){
+          console.log("O herói de nome " + RadicalDreamers[cont-1] + " está no nível Platina")   
+             }
+             
+else if(RadicalDreamers[cont]>8000 && RadicalDreamers[cont]<=9000){ //ok
+               console.log("O herói de nome "+ RadicalDreamers[cont-1] + " está no nível Ascendente")
+            }
+             
+else if(RadicalDreamers[cont]>9000 && RadicalDreamers[cont]<=10000){ //ok
+                console.log("O herói de nome " + RadicalDreamers[cont-1] + " está no nível Imortal")
+             }
+             
+else if(RadicalDreamers[cont]>10000){
+             console.log("O herói de nome "+ RadicalDreamers[cont-1] + " está no nível  Radiante")          //ok
+             
+            }
 cont++;
 
     
